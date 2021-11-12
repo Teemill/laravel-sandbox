@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Create the defeault .env file
+cp ./.env.example ./.env
+
 # Install composer dependencies
 docker run --rm \
     -u "$(id -u):$(id -g)" \
