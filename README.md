@@ -1,5 +1,15 @@
 # Installation
 
+You can run this script to run the installation and get started _fast_...
+```bash
+cd ~/teemill && \
+git clone https://github.com/Teemill/laravel-sandbox.git && \
+cd ~/teemill/laravel-sandbox && bash ./install && \
+sandbox up -d
+```
+
+and this is a breakdown of each step...
+
 Go to your Teemill root dir
 ```bash
 cd ~/teemill
