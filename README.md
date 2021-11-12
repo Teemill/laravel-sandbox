@@ -5,7 +5,7 @@ Go to your Teemill root dir
 cd ~/teemill
 ```
 
-Clone the repository you donkey
+Clone the repository
 
 ```bash
 git clone https://github.com/Teemill/laravel-sandbox.git
