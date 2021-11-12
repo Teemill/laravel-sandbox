@@ -4,34 +4,34 @@ You can run this script to run the installation and get started _fast_...
 ```bash
 cd ~/teemill && \
 git clone https://github.com/Teemill/laravel-sandbox.git && \
-cd ~/teemill/laravel-sandbox && bash ./install && \
-sandbox up -d
-```
-
-and this is a breakdown of each step...
-
-Go to your Teemill root dir
-```bash
-cd ~/teemill
-```
-
-Clone the repository
-
-```bash
-git clone https://github.com/Teemill/laravel-sandbox.git
-```
-
-Install Laravel Sail dependencies
-
-```bash
 cd ~/teemill/laravel-sandbox && bash ./install
 ```
 
-Sandbox is an alias of `sail` and you can use it to start Sail, and initialize the application.
+When you're ready, you can start the application by running...
+```
+./vendor/bin/sail up
+```
+
+If you don't want to write out `./vendor/bin/sail` each time you execute a command, you can add shortcut to your `./.zshrc`.
 
 ```bash
-sandbox up -d
+# Copy a shortcut helper into the user's path to make it easier
+# for the user to run commands
+echo 'alias sandbox="~/teemill/laravel-sandbox/sandbox $@"' >> ~/.zshrc
+
+# Reload the bash config with the new alias
+source ~/.zshrc
 ```
+
+Now you should be able to execute all sail commands through the `sandbox` shortcut. For example, if you want to make a new test file. instead of running...
+```bash
+./vendor/bin/sail artisan make:test --pest ExampleTest
+```
+You can run...
+```bash
+sandbox artisan make:test --pest ExampleTest
+```
+
 
 Go to http://localhost/welcome to check everything is working as expected
 

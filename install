@@ -10,10 +10,3 @@ docker run --rm \
     -w /var/www/html \
     laravelsail/php80-composer:latest \
     composer install --ignore-platform-reqs
-
-# Copy a shortcut helper into the user's path to make it easier
-# for the user to run commands
-echo 'alias sandbox="~/teemill/laravel-sandbox/sandbox $@"' >> ~/.bashrc
-
-# Reload the bash config with the new alias
-source ~/.bashrc
