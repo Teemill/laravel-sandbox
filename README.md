@@ -14,7 +14,7 @@ git clone https://github.com/Teemill/laravel-sandbox.git
 Install Laravel Sail dependencies
 
 ```bash
-cd ~/teemill/laravel-sandbox && bash install.bash
+cd ~/teemill/laravel-sandbox && bash ./install
 ```
 
 Start Sail to initialize the application
