@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TodoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/welcome', function () {
-    return [
+Route
+    ::get('/welcome', fn () => [
         'message' => 'Welcome to test driven development'
-    ];
-})->name('api.welcome');
+    ])
+    ->name('api.welcome');
+
+Route::resource('/todo', TodoController::class)
+    ->middleware('auth:sanctum');
