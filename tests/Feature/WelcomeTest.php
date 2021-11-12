@@ -1,7 +1,7 @@
 <?php
 
 test('it can display a welcome message', function () {
-    $response = $this->get('/api/hello')->assertStatus(200);
+    $response = $this->get(route('api.welcome'))->assertStatus(200);
 
     expect($response->getContent())
         ->json()

@@ -22,4 +22,4 @@ Route::get('/welcome', function () {
     return [
         'message' => 'Welcome to test driven development'
     ];
-});
+})->name('api.welcome');
