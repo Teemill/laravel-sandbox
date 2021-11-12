@@ -17,10 +17,10 @@ Install Laravel Sail dependencies
 cd ~/teemill/laravel-sandbox && bash ./install
 ```
 
-Start Sail to initialize the application
+Sandbox is an alias of `sail` and you can use it to start Sail, and initialize the application.
 
 ```bash
-vendor/bin/sail up -d
+sandbox up -d
 ```
 
 Go to http://localhost/welcome to check everything is working as expected
