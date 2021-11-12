@@ -24,3 +24,5 @@ vendor/bin/sail up -d
 ```
 
 Go to http://localhost/welcome to check everything is working as expected
+
+For more information on how to interact with laravel Sail - the [documentation](https://laravel.com/docs/8.x/sail#executing-sail-commands) has no equal
