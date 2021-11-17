@@ -12,7 +12,7 @@ When you're ready, you can start the application by running...
 ./vendor/bin/sail up
 ```
 
-If you don't want to write out `./vendor/bin/sail` each time you execute a command, you can add shortcut to your `./.zshrc`.
+If you don't want to write out `./vendor/bin/sail` each time you execute a command, you can add this shortcut to your `./.zshrc`.
 
 ```bash
 # Copy a shortcut helper into the user's path to make it easier
