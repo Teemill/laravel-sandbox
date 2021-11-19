@@ -1,5 +1,10 @@
 # Installation
 
+First thing you'll want to do is stop any core-api containers you have running - to ensure there are no conflicts with the testing app...
+```bash
+tml core-api:stop
+```
+
 You can run this script to run the installation and get started _fast_...
 ```bash
 cd ~/teemill && \
